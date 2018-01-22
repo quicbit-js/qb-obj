@@ -7,8 +7,8 @@
   "email": "support@quicbit.com",
   "repository": "quicbit-js/qb-obj",
   "devDependencies": {
-    "tape": "^4.6.3",
-    "test-kit": "^2.5.2"
+    "tape": "^4.8.0",
+    "test-kit": "^2.7.2"
   },
   "scripts": {
     "test": "tape test.js",
@@ -25,5 +25,6 @@
     "performance"
   ],
   "author": "Matthew Voss",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
