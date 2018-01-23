@@ -1,6 +1,6 @@
 {
   "name": "qb-obj",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A light-weight selection of our most broadly useful and simple object manipulation functions",
   "homepage": "https://github.com/quicbit-js/qb-obj",
   "url": "https://github.com/quicbit-js/qb-obj/issues",
@@ -23,6 +23,10 @@
     "quicbit",
     "data",
     "performance"
+  ],
+  "files": [
+    "index.js",
+    "test.js"
   ],
   "author": "Matthew Voss",
   "license": "ISC",
