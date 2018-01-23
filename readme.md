@@ -23,7 +23,7 @@ A light-weight selection of our most broadly useful and simple object manipulati
 
 ## Install
 
-    npm install qb1-obj
+    npm install qb-obj
     
 # API
 
