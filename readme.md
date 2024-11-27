@@ -62,7 +62,7 @@ clutter:
     
     assert.same(map(some_result), {pointer: 7})                       // easier to read
 
-You can use the key_fn and val_fn, we to build other objects with minimal code:
+You can use the key_fn and val_fn, to build other objects with minimal code:
 
     var obj = { abc: null, other_data: null, pointer: 7, tags: ['a','b','c'] }
     map(obj, (k, v) => { v && Array.isArray(v) })
@@ -113,20 +113,13 @@ Similar to Array.prototype.filter().  Returns an object with only values for whi
 
 ## select (obj, keys, opt)
 
-A simpler form of filter for just selecting the specified keys.  Null values dropped by default.
+A simpler form of filter for returning an object with only the specified keys.  Null values dropped by default.
 
     obj         object to filter into a new returned object.
-    
-    fn (        function (optional).  returning truthy will cause those key/values to be kept and returned.
-      k           key           the key of the value to check
-      v           value         the value to check
-      i           index         the index of the key/value (in object insert-order)
-    )         
+    keys        array of keys to select from the object and return 
     opt {       options
       init        object, if provided will be used as a destination on which values will be set.
       keep_null   if true, null and undefined values are kept instead of dropped
-      keys        array of keys to selectively traverse the object instead of Object.keys() (selects a subset).
-                  keys can be useful for iterating over non-iterable properties.
     }         
 
 ## oa_push (obj, key, val)  "object-of-arrays-push" 
